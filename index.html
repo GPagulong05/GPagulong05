@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <nav class="navbar">
+        <ul> 
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Personal Info.</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="main">
+           <h1 class="headings">Greetings! My name is <br> Gerald Pagulong </h1>
+           <p1 id="text">
+        </p1>
+        <script type="text/javascript">
+            var s= 0, text;
+            text = "Welcome To My Portfolio"
+            function typing(){
+                if(s<text.length){
+                    document.getElementById("text").innerHTML += text.charAt(s);
+                    s++;
+                    setTimeout(typing, 100);
+    
+                }
+            }
+            typing();
+        </script>
+        </div>
+
+    </section>
+    <section id="about">
+        <h1 class="headings">About Me</h1>
+        <div id="pic">
+            <img src="image2.jpg" alt="">
+            <div id="intro">
+                <h2>Gerald Pagulong</h2>
+                <p1>
+                       Name: Gerald Pagulong<br>
+                     Status: Single<br>
+                    Address: Caraga Davao Oriental<br>
+                    Citizenship: Filipino<br>
+                    Hobies: Playing Basketball, and other outdoor sports<br>
+                    Cellphone No.: 09123456789<br>
+                    Motto: No pain No gain
+                </p1>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="headings"> Contact Me</h1>
+        <div class="row">
+        <div class="box">
+            <img src="images3.png" alt="">
+            <h1 class="headings"> Facebook</h1>
+            <p>For more info please contact me on facebook at https://web.facebook.com/gerald.pagulong for more info.</p>
+        </div>
+        <div class="box">
+            <img src="images4.png" alt="">
+            <h1 class="headings"> Email/Gmail</h1>
+            <p>For more info please send me an email @ geraldpagulong123@gmail.com for more info.</p>
+        </div>
+        <div class="box">
+            <img src="images5.jpg" alt="">
+            <h1 class="headings">Celphone No.</h1>
+            <p>For more info please contact me on this number, 09123456789 for more info</p>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
